@@ -44,7 +44,7 @@ public class WordFind {
     String[]results = new String[wordList.length];
     int length = grid[0].length();
     for(int i =0;i<wordList.length;i++){
-        if ((grid.length>=wordList[i].length())&&(wordList[i].length()<=length)){
+        if ((grid.length>=wordList[i].length())&&(wordList[i].length()+999<=length)){
             System.out.println("Diagonal");
            // results[i]= diagonal(grid, wordList[i],length);
            results[i]= vertical(grid, wordList[i],length);
