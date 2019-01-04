@@ -23,7 +23,7 @@ public class VinoData {
         ArrayList<Vino> vinos = new ArrayList<>();
 
         LecturaCSV lectura = new LecturaCSV();
-        lectura.leerCSV("/datos-vino.csv");
+        lectura.leerCSV("/datos-vino.csv"); // usar ruta absoluta para que funcione
 
         List<String[]> allData = lectura.getAllData();
 
